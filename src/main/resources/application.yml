@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/myboard?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: dbtjd007
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate.format-sql: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+
+jwt:
+  expiredTime: 600000
+  secret-key: qmf77631!asf5fwel132nk3k34nl1lksovs09z546qmf77631!asfqwdwqdsovs09z546qmf77631!asf5fwel132nk3k34nl1lksovs09z546mf77631!asf5fwel132nk3k34nl1lksovs09z546qmf77631!asfqwdwqdsovs09z546qmf77631!asf5fwel132nk3k34nl1lksovs09z546qmf77631!asf5fwel132nk3k34nl1lksovs09z546qmf77631!asfqwdwqdsovs09z546qmf77631!asf5fwel132nk3k34nl1lksovs09z546
